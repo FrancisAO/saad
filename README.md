@@ -1,2 +1,2 @@
 # Über das Projekt
-TDieses Projekt enthält Informationen über Software Architektur und Design.
+Dieses Projekt enthält Informationen über Software Architektur und Design.
