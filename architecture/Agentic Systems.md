@@ -76,3 +76,6 @@ Beispiel Use Cases
 Reklamationen, technischer Support)
 - Einfache/allgemeine Fragen an kleine Modelle weiterleiten und schwierigere
 Fragen an größere Modelle
+
+Quellen:
+- https://www.anthropic.com/engineering/building-effective-agents
