@@ -49,5 +49,30 @@ aufgeteilt werden kann.
 - Dieses Pattern erhöht die Latenz bis zum finalen Ergebnis. Dies wird
 mit dem Ziel eine höhere Qualität der Antwort zu erreichen in Kauf genommen.
 
+Beispiel Use Cases
+- Schreiben einer Gliederung eines Dokuments, prüfen ob die Gliederung bestimmten Kriterien entspricht,
+anschließend das Dokument auf Grundlage der Gliederung schreiben
+
 Quellen:
 - https://www.anthropic.com/engineering/building-effective-agents
+
+### Workflow: Routing
+![Prompt routing](images/llm-call-router.png)
+
+Beim Routing wird der Input durch einen LLM Call Router klassifiziert.
+Anschließend wird der Aufruf an einen spezialisierten LLM Call übergeben.
+Dieser Workflow würdigt die Trennung nach Zuständigkeiten
+(separation of concerns) und ermöglicht das Erzeugen spezialisierterer
+Prompts. 
+
+Anwendbarkeit
+- Bei komplexen Aufgaben, die unterschiedlichen Kategorien zugeordnet
+werden können und jede dieser Kategorien besser separat behandelt wird.
+Die Klassifizierung muss dabei maschinell z.B. durch eine LLM oder einen
+Klassifizierungs-Algorithmus bewerkstelligt werden können.
+
+Beispiel Use Cases
+- Kunden-Anfragen an Sub-Prozesse, Prompts und tools weiterleiten (allgemeine Fragen,
+Reklamationen, technischer Support)
+- Einfache/allgemeine Fragen an kleine Modelle weiterleiten und schwierigere
+Fragen an größere Modelle
