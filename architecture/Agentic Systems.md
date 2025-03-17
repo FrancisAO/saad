@@ -11,7 +11,7 @@ Agenten-Systeme lösen Probleme autonom und dynamsich unter Verwendung von LLMs.
 Workflow-Systeme lösen Probleme durch fest programmierte Abläufe unter Verwendung von LLMs.
 Beide Kategorien können unter dem Begriff Agentic System zusammengefasst werden.
 
-Quellen:
+Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
 
 ### Building Block: The augmented LLM
@@ -33,7 +33,7 @@ Retrieval
 
 Die Kombination dieser drei Konzepte ermöglicht es, Anwendungen über einfache KI-Modelle hinaus zu verbessern und deren Effektivität zu steigern.
 
-Quellen:
+Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
 
 ### Workflow: Prompt chaining
@@ -53,7 +53,7 @@ Beispiel Use Cases
 - Schreiben einer Gliederung eines Dokuments, prüfen ob die Gliederung bestimmten Kriterien entspricht,
 anschließend das Dokument auf Grundlage der Gliederung schreiben
 
-Quellen:
+Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
 
 ### Workflow: Routing
@@ -77,5 +77,43 @@ Reklamationen, technischer Support)
 - Einfache/allgemeine Fragen an kleine Modelle weiterleiten und schwierigere
 Fragen an größere Modelle
 
-Quellen:
+Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
+
+### Workflow: Parallelization
+![prompt Parallelization](images/parallelization.png)
+
+LLMs können manchmal gleichzeitig an einer Aufgabe arbeiten und ihren output aggregieren.
+Dieser Workflow zeigt sich in zwei Varianten:
+
+Segmentierung
+- Aufteilung einer Aufgabe in unabhängige Teilaufgaben, die parallel ausgeführt werden.
+
+Voting
+- Mehrfaches Ausführen derselben Aufgabe, um unterschiedliche Ergebnisse zu erhalten.
+
+Wann dieser Workflow verwendet werden sollte
+- Parallelisierung ist effektiv, wenn die Teilaufgaben zur Beschleunigung parallel ausgeführt 
+  werden können (Segmentierung) oder wenn mehrere Perspektiven oder Versuche erforderlich sind, um zuverlässigere 
+  Ergebnisse zu erzielen (voting). Bei komplexen Aufgaben mit mehreren Aspekten erzielen LLMs in der Regel 
+  bessere Ergebnisse, wenn jeder Aspekt durch einen separaten LLM-Aufruf behandelt wird, sodass sich 
+  das Modell gezielt auf jeden spezifischen Bereich konzentrieren kann.
+  
+Beispiele, in denen Parallelisierung nützlich ist:
+
+Segmentierung
+- Implementierung von Sicherheitsmechanismen, bei denen eine Modellinstanz Benutzeranfragen verarbeitet, während eine 
+  andere diese auf unangemessene Inhalte oder Anfragen überprüft. Dies führt tendenziell zu besseren Ergebnissen, als wenn 
+  derselbe LLM-Aufruf sowohl die Sicherheitsüberprüfung als auch die Kernantwort übernimmt.
+- Automatisierte Evaluierungen zur Bewertung der LLM-Leistung, bei denen jeder LLM-Aufruf einen anderen Aspekt 
+  der Modellleistung für eine bestimmte Eingabe überprüft.
+
+Voting
+- Überprüfung eines Codes auf Sicherheitslücken, wobei mehrere unterschiedliche Prompts den Code analysieren und markieren, 
+  falls sie ein Problem entdecken.
+- Bewertung, ob ein bestimmter Inhalt unangemessen ist, wobei mehrere Prompts verschiedene Aspekte prüfen oder 
+  unterschiedliche Abstimmungsschwellen erforderlich sind, um Fehlalarme und verpasste Erkennungen auszugleichen.
+
+Quellen
+- https://www.anthropic.com/engineering/building-effective-agents
+  
