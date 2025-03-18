@@ -117,3 +117,21 @@ Voting
 Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
   
+### Workflow: Orchestrator
+![Orchestrator](images/orchestrator.png)
+
+Im Orchestrator-Workflow gibt es einen Orchestrator der aus dem Input
+die Anzahl der Sub-Tasks ableitet und dynamisch die folgenden
+LLM-Aufrufe dynamisch ermittelt. Der Synthesizer führt die Ausgaben
+der LLM-Aufrufe zusammen.
+
+Anwendbarkeit
+- Dieser Workflow ist gut für komplexe Aufgaben geeignet, bei denen 
+ nicht pauschal gesagt werden kann, welche Subtasks erforderlich sind
+ Das ist z.B. beim Coding der Fall, wenn die Anzahl der Dateien die
+ geändert werden müssen von dem jeweiligen Task abhängig ist. 
+ 
+Beispiel Use Cases
+- Coding-Produkte die jedes Mal komplexe Änderungen an mehreren Dateien maschinell
+- Such-Tasks die das ermitteln und analysieren von Informationen aus mehreren Quellen
+implizieren.
