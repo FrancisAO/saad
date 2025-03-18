@@ -135,3 +135,6 @@ Beispiel Use Cases
 - Coding-Produkte die jedes Mal komplexe Änderungen an mehreren Dateien maschinell
 - Such-Tasks die das ermitteln und analysieren von Informationen aus mehreren Quellen
 implizieren.
+
+Quellen
+- https://www.anthropic.com/engineering/building-effective-agents
