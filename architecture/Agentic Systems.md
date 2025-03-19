@@ -138,3 +138,23 @@ implizieren.
 
 Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
+
+### Workflow: Evaluator-optimzer
+![Evaluator-optimzer](images/evaluator-optimizer.png)
+
+Im Evaluator-optimizer Workflow wird der Output eines LLM-Aufrufs von einem
+zweiten LLM-Aufruf evaluiert. 
+
+Anwendbarkeit
+- Klare Bewertungskriterien sind vorhanden.
+- Iterative Verfeinerung bietet einen messbaren Mehrwert.
+
+Dieser Workflow ist geeignet, wenn die Antworten der LLM nachweislich verbessert werden können,
+wenn ein Mensch der LLM Feedback gibt und dieses Feedback auch von einer LLM (dem Evaluator)
+erbracht werden kann.
+
+Analogie:
+- Vergleichbar mit dem iterativen Schreibprozess eines menschlichen Autors bei der Erstellung eines ausgefeilten Dokuments.
+
+Quellen
+- https://www.anthropic.com/engineering/building-effective-agents
