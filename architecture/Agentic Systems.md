@@ -158,3 +158,49 @@ Analogie:
 
 Quellen
 - https://www.anthropic.com/engineering/building-effective-agents
+
+### SPARC
+SPARC steht für 
+- Specification
+- Pseudocode
+- Architecture
+- Refinement
+- Completion
+
+Spezifikation
+
+    Klare Ziele definieren und umfassende Anforderungen erheben.
+
+    Nutzungsszenarien analysieren und UI/UX-Richtlinien festlegen.
+
+    Symbolische Reasoning-Frameworks setzen, um eine solide Grundlage zu schaffen.
+
+Pseudocode
+
+    Einen abstrakten Pseudocode-Umriss entwickeln, der als Roadmap (Fahrplan) für die Implementierung dient.
+
+    Ausführliche Inline-Kommentare einfügen, die Logik und Annahmen erklären.
+
+Architektur
+
+    Eine skalierbare und wartbare Systemarchitektur entwerfen, die mit den Projektanforderungen übereinstimmt.
+
+    Klare Systemkomponenten definieren und den passenden Technologie-Stack auswählen.
+
+    Das System so strukturieren, dass es emergente Codierungsfähigkeiten unterstützt.
+
+Verfeinerung
+
+    Design und Codebasis iterativ verbessern, um Performance und Zuverlässigkeit zu erhöhen.
+
+    Algorithmen optimieren und durch Refactoring die Wartbarkeit steigern.
+
+    Fortlaufend Feedback von Team und Stakeholdern integrieren.
+
+Abschluss
+
+    Das Projekt durch umfassende Tests, Dokumentation und Deployment-Vorbereitungen finalisieren.
+
+    Umfassende Unit-, Integrations- und Systemtests durchführen.
+
+    Detaillierte Strategien für Deployment und Monitoring festlegen.
